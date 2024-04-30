@@ -1,9 +1,8 @@
 const app = require("./app.js");
 const mongoose = require("mongoose");
 const port = process.env.port;
-const mongoDBurl = process.env.mongoDBurl;
 const mongoDB = async () => {
-  await mongoose.connect(mongoDBurl);
+  await mongoose.connect( process.env.mongoDBurl);
 };
 mongoDB()
   .then(() => console.log("MongoDB Connected...."))
@@ -12,6 +11,3 @@ mongoDB()
 app.listen(port, () => {
   console.log(`server connected... ${port}`);
 });
-
-// git config --global user.name "your_username"
-// git config --global user.email "your_email@example.com"
