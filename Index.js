@@ -3,7 +3,7 @@ require('dotenv').config();
 const mongoose = require("mongoose");
 const port =  3000;
 const mongoDB = async () => {
-  await mongoose.connect('mongodb+srv://ramitgzp:A6tZUiMX5lIjxstb@cluster0.llt2qkg.mongodb.net/photech');
+  await mongoose.connect('mongodb+srv://ramitgzp:A6tZUiMX5lIjxstb@cluster0.llt2qkg.mongodb.net/photechitbackend');
 };
 mongoDB()
   .then(() => console.log("MongoDB Connected...."))
