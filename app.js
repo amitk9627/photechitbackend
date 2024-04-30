@@ -3,7 +3,7 @@ require('dotenv').config();
 const cors=require('cors');
 
 const app=express();
-const contactusRouter=require('../routes/contactus.jd');
+const contactusRouter=require('./routes/contactus.js');
 
 app.use(cors());
 app.use(express.json());
